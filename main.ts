@@ -5,7 +5,7 @@ const DEFAULT_BRANCH = "main";
 const pat = new URLPattern({
   pathname: "/:proj([0-9A-Za-z_.\-]+(?:@[0-9A-Za-z_.\-]+)?)/:path*",
 });
-// "https://code.sunsetkookaburra.xyz/bitbin@0.0.3/formats/mod.ts"
+
 function remap(url: string) {
   const result = pat.exec(url);
   if (result === null) {
